@@ -1,7 +1,9 @@
+package Lab2;
+
 public class Fighter {
-    private String name;
-    private int health;
-    private int damagePerAttack = 0;
+    String name;
+    int health;
+    int damagePerAttack = 0;
 
     public Fighter(String name, int health,int damagePerAttack )
     {
@@ -9,9 +11,9 @@ public class Fighter {
         this.health = health;
         this.damagePerAttack = damagePerAttack;
     }
-    public void attack(String opponent)
+    public void attack(Fighter opponent)
     {
-        System.out.println(name + " did " + damagePerAttack +" hp to " +opponent);
+        opponent.health -= damagePerAttack;
     }
 }
 
