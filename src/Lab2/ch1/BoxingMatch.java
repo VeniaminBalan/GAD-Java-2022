@@ -1,4 +1,6 @@
-package Lab2;
+package Lab2.ch1;
+
+import Lab2.ch1.Fighter;
 
 public class BoxingMatch {
     Fighter fighter1;
