@@ -1,8 +1,8 @@
 package Lab2.ch1;
 
 public class Fighter {
-    String name;
-    int health;
+    private String name;
+    private int health;
     int damagePerAttack = 0;
 
     public Fighter(String name, int health,int damagePerAttack )
@@ -14,6 +14,14 @@ public class Fighter {
     public void attack(Fighter opponent)
     {
         opponent.health -= damagePerAttack;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getHealth() {
+        return health;
     }
 }
 

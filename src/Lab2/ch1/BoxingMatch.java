@@ -17,10 +17,10 @@ public class BoxingMatch {
         do {
             fighter1.attack(fighter2);
             fighter2.attack(fighter1);
-        }while (fighter1.health > 0 || fighter2.health > 0);
+        }while (fighter1.getHealth() > 0 || fighter2.getHealth() > 0);
 
-        if(fighter1.health == fighter2.health) return "draw";
-        else if(fighter1.health > fighter2.health) return fighter1.name;
-        else return  fighter2.name;
+        if(fighter1.getHealth() == fighter2.getHealth()) return "draw";
+        else if(fighter1.getHealth() > fighter2.getHealth()) return fighter1.getName();
+        else return  fighter2.getName();
     }
 }
